@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing-Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c383f6ecf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>DevStart</h1>
+      <button id="menu-hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+      <div id="links">
+        <a href="#links" aria-label="inicio"
+          ><i
+            class="fa-solid fa-house fa-flip"
+            style="--fa-animation-duration: 5s"
+          ></i
+        ><span>Início</span></a>
+        <a href="#subtitulo1" aria-label="Ver cursos"
+          ><i
+            class="fa-solid fa-chalkboard-user fa-flip"
+            style="--fa-animation-duration: 5s"
+          ></i
+        ><span>Cursos</span></a>
+        <a href="#subtitulo2" aria-label="depoimentos"
+          ><i
+            class="fa-solid fa-face-smile fa-flip"
+            style="--fa-animation-duration: 5s"
+          ></i
+        ><span>Depoimentos</span></a>
+        <a href="#contato-secao" aria-label="Contato"
+          ><i
+            class="fa-solid fa-user fa-flip"
+            style="--fa-animation-duration: 5s"
+          ></i
+        ><span>Contato</span></a>
+        <button id="escuro">
+          <i
+            class="fa-solid fa-circle-half-stroke fa-flip"
+            style="--fa-animation-duration: 5s"
+          ></i>
+          <span>Tema</span>
+        </button>
+      </div>
+    </header>
+    <section>
+      <div id="container">
+        <div id="secao">
+          <h2>DevStart — A Plataforma de Resultados</h2>
+          <p>
+            A DevStart chegou para revolucionar o mercado de tecnologia e o
+            mundo dos códigos.
+          </p>
+          <button id="comecar">Começar Agora</button>
+        </div>
+
+        <h2 id="subtitulo1">Cursos</h2>
+
+        <div id="cursos">
+        </div>
+
+        <h2 id="subtitulo2">Depoimentos dos Nossos Alunos</h2>
+        <div class="depoimentos-wrapper">
+          <button id="btn-ant" class="nav-btn" aria-label="Depoimento anterior">&#10094;</button>
+          <div id="depoimentos">
+            <div class="depoimento ativo">
+              <h3 class="nome">João Pedro</h3>
+              <p class="texto">O serviço é maravilhoso e aprendi muito</p>
+            </div>
+
+            <div class="depoimento">
+              <h3 class="nome">Alana Silva</h3>
+              <p class="texto">
+                Os cursos são bem explicados e parabéns aos professores
+              </p>
+            </div>
+
+            <div class="depoimento">
+              <h3 class="nome">Ricardo Lima</h3>
+              <p class="texto">O curso é Maravilhoso e espetacular</p>
+            </div>
+
+            <div class="depoimento">
+              <h3 class="nome">Maria</h3>
+              <p class="texto">
+                Aprendi muito com os cursos e já consegui um emprego na área
+              </p>
+            </div>
+          </div>
+          <button id="btn-prox" class="nav-btn" aria-label="Próximo depoimento">&#10095;</button>
+        </div>
+        <section id="contato-secao">
+          <div class="contato-container">
+            <h2>Ficou com alguma dúvida? Envie uma mensagem para nós</h2>
+
+            <form id="formulario-contato">
+              <div class="campo-grupo">
+                <label for="nome">Digite seu nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+
+              <div class="campo-grupo">
+                <label for="email">Digite seu e-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="seuemail@exemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="campo-grupo">
+                <label for="mensagem">Escreva uma mensagem:</label>
+                <textarea
+                  id="mensagem"
+                  rows="5"
+                  placeholder="Digite sua mensagem aqui..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+              <p id="resposta"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer>&copy;2026 João Pedro. Todos os direitos reservados.</footer>
+    <script src="landing2.js"></script>
+  </body>
+</html>
